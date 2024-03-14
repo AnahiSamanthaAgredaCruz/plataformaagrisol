@@ -1,5 +1,5 @@
 {
-  "name": " ",
+  "name": "untitled",
   "version": "0.0.1",
   "description": "",
   "private": true,
@@ -15,10 +15,14 @@
   },
   "devDependencies": {
     "copy-webpack-plugin": "^11.0.0",
+    "dotenv": "^16.4.5",
     "html-webpack-plugin": "^5.5.3",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1",
     "webpack-merge": "^5.9.0"
+  },
+  "dependencies": {
+    "mongoose": "^8.2.1"
   }
 }
