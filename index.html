@@ -1,32 +1,53 @@
-<!doctype html>
-<html class="no-js" lang="">
-
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>hola mundo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio de Sesión - Agrosol</title>
   <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('https://images.pexels.com/photos/974314/pexels-photo-974314.jpeg'); /* Ruta de tu imagen de fondo */
+      background-size: cover; /* Ajustar la imagen al tamaño del viewport */
+      background-position: center; /* Centrar la imagen */
+      background-repeat: no-repeat; /* No repetir la imagen */
+    }
+    .nombre-plataforma {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      color: white;
+      font-size: 50px;
+      font-weight: bold;
+    }
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
-
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
+  </style>
 </head>
-
 <body>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/app.js"></script>
+<div class="nombre-plataforma">AGROSOL</div>
+
+<div class="Formulario">
+  <h1>Inicio de sesión</h1>
+  <form method="post">
+    <div class="username">
+      <input type="text"  required>
+      <label>Nombre de usuario</label>
+    </div>
+    <div class="contrasena">
+      <input type="password" required>
+      <label>Contraseña</label>
+    </div>
+    <div class="recordar">¿Olvidó su contraseña?</div>
+    <input type="submit" value="Iniciar">
+    <div class="registrarse">
+      Quiero hacer el <a href="registro.html">registro</a>
+    </div>
+  </form>
+</div>
 
 </body>
-
 </html>
