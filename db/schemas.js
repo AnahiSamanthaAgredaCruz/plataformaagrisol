@@ -16,6 +16,7 @@ const typeDefs = gql `
         password: String!
     }
 }
+
 `;
 
 module.exports = typeDefs;
