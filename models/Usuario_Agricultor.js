@@ -11,7 +11,7 @@ const Usuario_AgricultorSchema = mongoose.Schema({
     required: true,
     trim: true
   },
-  email: {
+  correo_electronico: {
     type: String,
     required: true,
     trim: true,
