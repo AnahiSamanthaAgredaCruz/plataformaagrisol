@@ -2,38 +2,40 @@ const { gql } = require('apollo-server');
 
 const typeDefs = gql `
 
+    #UsuarioAgricultor
     type Usuario_Agricultor {
         id: ID
         nombre: String
         apellido: String
         carnet_identidad: String
         direccion: String
+        telefono: String
         correo_electronico: String
-        email: String
         creado: String
     }
-    type Token {
-        token: String
-    }
-       input Usuario_AgricultorInput {
 
+    input Usuario_AgricultorInput {
         nombre: String!
         apellido: String!
         carnet_identidad: String!
         direccion: String!
+        telefono: String!
         correo_electronico: String!
-        email: String!
         password: String!
-
     }
-      input Autentificar_AgricultorInput {
-        email: String
+       #Token
+        type Token {
+        token: String
+    }
+      input AutenticarInput {
+        correo_electronico: String
         password: String
     }
 
 
     type Query {
-        #Usuarios
+        #Usuario
+        obtenerUsuarios_Agricultor: [Usuario_Agricultor]
         obtenerUsuario_Agricultor(token: String): Usuario_Agricultor
 
 
@@ -41,9 +43,10 @@ const typeDefs = gql `
     type Mutation {
         #Usuarios
         nuevoUsuario_Agricultor(input: Usuario_AgricultorInput): Usuario_Agricultor
-        autentificarUsuario_Agricultor(input: Autentificar_AgricultorInput ): Token
+        autenticarUsuario_Agricultor(input: AutenticarInput): Token
 
 
 }
-`;
-module.exports = typeDefs;
+
+`
+module.exports = typeDefs

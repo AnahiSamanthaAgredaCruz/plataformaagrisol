@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose')
 
 const Usuario_AgricultorSchema = mongoose.Schema({
   nombre: {
@@ -41,6 +41,6 @@ const Usuario_AgricultorSchema = mongoose.Schema({
     type: Date,
     default: Date.now()
   }
-});
+})
 
-module.exports = mongoose.model('Usuario_Agricultor', Usuario_AgricultorSchema);
+module.exports = mongoose.model('Usuario_Agricultor',Usuario_AgricultorSchema)
